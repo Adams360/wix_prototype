@@ -1,5 +1,5 @@
+// Elements Accordion Functionality
 const categories = document.querySelectorAll('.category');
-
 categories.forEach((category) => {
     category.addEventListener('click', (e) => {
         let content = e.target.nextElementSibling;
@@ -15,6 +15,7 @@ categories.forEach((category) => {
         }
     })
 });
+// END OF Elements Accordion Functionality
 
 
 // Popper
@@ -51,7 +52,7 @@ refs.forEach((ref) => {
 
 
 // Drag and Drop.
-const elements = document.querySelectorAll('.btn');
+const elements = document.querySelectorAll('.icon');
 const stage = document.querySelector('.stage');
 let element = null;
 
@@ -77,7 +78,7 @@ function dragStart(e) {
 function dragEnd() {
     console.log('END');
     stage.className = 'stage';
-    this.className = 'btn';
+    this.className = 'icon';
 }
 
 function dragOver(e) {

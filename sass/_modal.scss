@@ -3,6 +3,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     visibility: hidden;
     opacity: 0;
     
@@ -18,6 +19,36 @@
     width: 25%;
     height: 50%;
     overflow: hidden;
+
+
+
+    [x-arrow] {
+        position: absolute;
+   
+      }
+  
+      & {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      
+      &[x-placement="bottom"] [x-arrow] {
+        top: -10px;
+        border-bottom: 10px solid white;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        left: 30% !important;
+      }
+      
+      &[x-placement="top"] [x-arrow] {
+        bottom: -10px;
+        border-top: 10px solid white;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+      }
+  
+
+
 
     &__top {
         padding: 1rem;

@@ -408,6 +408,22 @@ body {
   width: 25%;
   height: 50%;
   overflow: hidden; }
+  .modal [x-arrow] {
+    position: absolute; }
+  .modal {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .modal[x-placement="bottom"] [x-arrow] {
+    top: -10px;
+    border-bottom: 10px solid white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    left: 30% !important; }
+  .modal[x-placement="top"] [x-arrow] {
+    bottom: -10px;
+    border-top: 10px solid white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent; }
   .modal__top {
     padding: 1rem;
     border-bottom: 1px solid gray;
