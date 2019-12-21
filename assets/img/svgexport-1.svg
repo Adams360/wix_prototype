@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9" height="11" viewBox="0 0 9 11" class="symbol symbol-pushAndEnforceAnchors">
+  <g id="Symbols" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px">
+    <g id="Artboard" fill="#2d4150" stroke="none" stroke-width="1px">
+      <path id="Combined-Shape" d="M.5 9h8a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9zm4.323-1.776a.483.483 0 0 1-.665-.016L.927 4.355a.538.538 0 0 1-.059-.735.486.486 0 0 1 .705-.062L4 5.701V.521C4 .235 4.224 0 4.5 0s.5.234.5.522v5.18l2.427-2.144a.486.486 0 0 1 .705.062c.178.22.152.549-.059.735l-3.25 2.87z" stroke="none" fill="#2d4150" stroke-width="1px"></path>
+    </g>
+  </g>
+</svg>

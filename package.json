@@ -1,0 +1,17 @@
+{
+  "name": "wix_prototype",
+  "version": "1.0.0",
+  "description": "A WIX UX Prototype for the editor",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Adam Shaul",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}

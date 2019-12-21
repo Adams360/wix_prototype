@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    @media screen and (max-width: 1550px) {
+        font-size: 52%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'HelveticaNeue';
+    
+}
+
+
+.main {
+    height: 110vh;
+    display: flex;
+}
+
+
+  

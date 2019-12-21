@@ -1,0 +1,107 @@
+/* TopBar */
+
+.topbar {
+  background-color: $color-white;
+  box-shadow: 0 0 15px 0 rgba(22, 45, 61, 0.5);
+  height: 48px;
+  width: 100vw;
+  font-size: 14px;
+  z-index: 1000;
+  padding: 0 2rem;
+}
+
+.topbar .bordered {
+  border-left: 1px solid $blue-light;
+}
+
+.text-links {
+  height: 100%;
+  padding-left: 18px;
+}
+
+.topbar .topbar-item.wix_logo img {
+  width: 50px;
+  height: 20px;
+}
+
+.topbar .topbar-item.wix_logo {
+  padding: 0 10px;
+}
+
+.topbar .topbar-item {
+  padding: 0 18px;
+  height: 100%;
+}
+
+.topbar .topbar-item:not(.wix_logo):not(.page_selector):hover *,
+.topbar .topbar-item.selected  *{
+  filter: invert(54%) sepia(95%) saturate(2366%) hue-rotate(185deg)
+    brightness(98%) contrast(89%);
+  cursor: pointer;
+}
+
+.topbar .page_selector {
+  width: 180px;
+  padding: 0 18px 0 24px;
+}
+
+.topbar .page_selector:hover {
+  background: $blue-light;
+  cursor: pointer;
+}
+
+.topbar .page_selector span {
+  color: $blue-main;
+}
+
+.topbar .viewport-icons {
+  height: 100%;
+}
+
+.topbar .viewport-icons img {
+  height: 100%;
+  width: 24px;
+}
+
+.topbar .viewport-icons .topbar-item:first-child {
+  padding: 0 4px 0 15px;
+}
+
+.topbar .viewport-icons .topbar-item.selected img {
+  border-bottom: 3px solid $blue-main;
+}
+
+.topbar .viewport-icons .topbar-item:last-child {
+  padding: 0 15px 0 4px;
+}
+
+.topbar .topbar-item.icon-item {
+  padding: 0 9px;
+}
+
+.hide-tools-button {
+  z-index: 1500;
+  position: absolute;
+  top: -1px;
+  left: calc(50% - 57px);
+  width: 115px;
+  height: 12px;
+  border: 1px solid #d9e1e8;
+  background-color: $blue-light;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) height;
+  cursor: pointer;
+}
+
+.hide-tools-button img {
+  width: 7px;
+  transform: rotateZ(180deg);
+}
+
+.hide-tools-button:hover img {
+  filter: invert(54%) sepia(95%) saturate(2366%) hue-rotate(185deg)
+    brightness(98%) contrast(89%);
+}
