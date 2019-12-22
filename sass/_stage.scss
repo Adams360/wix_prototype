@@ -4,9 +4,15 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    transition: all .2s ease-out;
+
     flex: 1 1 81.3%;
     max-width: 81.3%;
     margin-left: auto;
+
+    &.hidden {
+        max-width: 100%;
+    }
 
 
 

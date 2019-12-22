@@ -1,0 +1,38 @@
+// Switch between menus
+const addElementsBtn = document.getElementById('addElementsBtn');
+const mainMenuWrapper = document.getElementById('mainMenuWrapper');
+const panel = document.getElementById('panel');
+const returnBtn = document.querySelector('.returnBtn');
+const hideControlsBtn = document.querySelector('.hideControlsBtn');
+const leftBar = document.querySelector('.leftbar');
+
+addElementsBtn.addEventListener('click', () => {
+  mainMenuWrapper.classList.add('move-out');
+  panel.classList.add('move-in');
+});
+
+returnBtn.addEventListener('click', () => {
+    mainMenuWrapper.classList.remove('move-out');
+    panel.classList.remove('move-in');
+});
+
+hideControlsBtn.addEventListener('click', () => {
+
+
+  stage.classList.toggle('hidden');
+  leftBar.classList.toggle('move-out');
+
+  setTimeout(() => {
+    stage.classList.remove('hidden');
+    leftBar.classList.remove('move-out');
+  }, 1000);
+
+
+
+})
+
+
+
+
+
+

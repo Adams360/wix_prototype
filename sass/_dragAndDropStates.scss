@@ -1,0 +1,19 @@
+.hold {
+    cursor: grabbing;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 255, 255, 0.568);
+        background-blend-mode: multiply;
+    }
+}
+
+.hover {
+    background-blend-mode: luminosity;
+    background-color: #ff000075;
+}

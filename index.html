@@ -1,391 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Wix Prototype</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Wix Prototype</title>
 </head>
+
 <body>
 
-    <!-- TOP BAR -->
-    <nav class="topbar flex justify-between fixed">
-      <div class="left-side flex row align-center">
-        <div class="wix_logo topbar-item flex row justify-center align-center ">
-          <img src="./assets/img/wixLogo.svg">
+  <!-- TOP BAR -->
+  <nav class="topbar flex justify-between fixed">
+    <div class="left-side flex row align-center">
+      <div class="wix_logo topbar-item flex row justify-center align-center ">
+        <img src="./assets/img/wixLogo.svg">
+      </div>
+      <div
+        class="page_selector topbar-item flex row justify-between align-center text-HelveticaNeueW01-55Roman bordered">
+        <div class="text">
+          Page: <span class="text-HelveticaNeueW01-45Light">HOME</span>
         </div>
-        <div class="page_selector topbar-item flex row justify-between align-center text-HelveticaNeueW01-55Roman bordered">
-          <div class="text">
-            Page: <span class="text-HelveticaNeueW01-45Light">HOME</span>
-          </div>
-          <img src="./assets/img/downChev_blue.svg">
+        <img src="./assets/img/downChev_blue.svg">
+      </div>
+      <div class="viewport-icons flex row bordered">
+        <div class="topbar-item viewport-mode flex align-center selected">
+          <img src="./assets/img/desktop_icon.svg" alt="">
         </div>
-        <div class="viewport-icons flex row bordered">
-          <div class="topbar-item viewport-mode flex align-center selected">
-            <img src="./assets/img/desktop_icon.svg" alt="">
-          </div>
-          <div class="topbar-item viewport-mode flex align-center">
-            <img src="./assets/img/mobile_icon.svg" alt="">
-          </div>
+        <div class="topbar-item viewport-mode flex align-center">
+          <img src="./assets/img/mobile_icon.svg" alt="">
         </div>
-
-        <div class="text-links flex row justify-between bordered">
-          <div class="topbar-item flex row flex justify-center align-center">
-            <span class="item-text">Site</span>
-          </div>
-          <div class="topbar-item flex row flex justify-center align-center">
-            <span class="item-text">Settings</span>
-          </div>
-          <div class="topbar-item flex row flex justify-center align-center">
-            <span class="item-text">Tools</span>
-          </div>
-          <div class="topbar-item flex row flex justify-center align-center">
-            <span class="item-text">Dev Mode</span>
-          </div>
-          <div class="topbar-item flex row flex justify-center align-center">
-            <span class="item-text">Help</span>
-          </div>
-          <div class="topbar-item flex row flex justify-center align-center">
-            <span class="item-text">Upgrade</span>
-          </div>
-        </div>
-        
       </div>
 
-      <div class="right-side flex row align-center ">
-        <div class="topbar-item icon-item flex justify-center align-center bordered">
-          <img src="./assets/img/zoom_out.svg">
+      <div class="text-links flex row justify-between bordered">
+        <div class="topbar-item flex row flex justify-center align-center">
+          <span class="item-text">Site</span>
         </div>
-        <div class="topbar-item icon-item flex justify-center align-center bordered">
-          <img src="./assets/img/undo.svg">
+        <div class="topbar-item flex row flex justify-center align-center">
+          <span class="item-text">Settings</span>
         </div>
-        <div class="topbar-item icon-item flex justify-center align-center bordered">
-          <img src="./assets/img/redo.svg">
+        <div class="topbar-item flex row flex justify-center align-center">
+          <span class="item-text">Tools</span>
         </div>
-        <div class="topbar-item flex row flex justify-center align-center bordered">
-          <span class="item-text">Save</span>
+        <div class="topbar-item flex row flex justify-center align-center">
+          <span class="item-text">Dev Mode</span>
         </div>
-        <div class="topbar-item flex row flex justify-center align-center bordered">
-          <span class="item-text">Preview</span>
+        <div class="topbar-item flex row flex justify-center align-center">
+          <span class="item-text">Help</span>
         </div>
-        <div class="topbar-item flex row flex justify-center align-center bordered">
-          <span class="item-text">Publish</span>
+        <div class="topbar-item flex row flex justify-center align-center">
+          <span class="item-text">Upgrade</span>
         </div>
       </div>
-      <div class="hide-tools-button flex justify-center align-center fixed">
-        <img src="./assets/img/chev_black_small.svg">
+
+    </div>
+
+    <div class="right-side flex row align-center ">
+      <div class="topbar-item icon-item flex justify-center align-center bordered">
+        <img src="./assets/img/zoom_out.svg">
       </div>
+      <div class="topbar-item icon-item flex justify-center align-center bordered">
+        <img src="./assets/img/undo.svg">
+      </div>
+      <div class="topbar-item icon-item flex justify-center align-center bordered">
+        <img src="./assets/img/redo.svg">
+      </div>
+      <div class="topbar-item flex row flex justify-center align-center bordered">
+        <span class="item-text">Save</span>
+      </div>
+      <div class="topbar-item flex row flex justify-center align-center bordered">
+        <span class="item-text">Preview</span>
+      </div>
+      <div class="topbar-item flex row flex justify-center align-center bordered">
+        <span class="item-text">Publish</span>
+      </div>
+    </div>
+    <div class="hide-tools-button flex justify-center align-center fixed">
+      <img src="./assets/img/chev_black_small.svg">
+    </div>
   </nav>
-      <!-- END OF TOP BAR -->
-  
-      <!-- Main Container for leftbar and the stage -->
-      <main class="main">
+  <!-- END OF TOP BAR -->
 
-        <div class="leftbar">
+  <!-- Main Container for leftbar and the stage -->
+  <main class="main">
 
+  <!-- LEFTBAR -->
+    <div class="leftbar">
 
-    
-
-          <div class="leftbar__top">
-
-            <img src="./assets/icons/info_btn.svg" alt="Info Button">
-
-            <h4> 
-              <span>You are customizing</span>
-                Site Name
-             </h4>
+<!-- leftbar Footer WRAPPER for main menu -->
+<div id="mainMenuWrapper" class="leftbar__content">
+  <!-- Top Title -->
+      <div class="leftbar__top">
+          <img src="./assets/icons/info_btn.svg" alt="Info Button">
+          <h4>
+            <span>You are customizing</span>
+            Site Name
+          </h4>
       </div>
+  <!-- END OF Top Title -->
 
-        
-<div class="leftbar__main">
-      
-<ul class="main-menu">
-              <li class="main-menu__item main-menu__item--pages">
-                <span> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 22 26" class="symbol symbol-leftBarPagesPanelManager icon"><path fill-rule="evenodd" d="M17 0a5 5 0 0 1 5 5v16a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h12zm0 20V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1zM8 10V8h6v2H8zm0 4v-2h6v2H8zm0 4v-2h6v2H8z" stroke="none" stroke-width="1px"></path></svg>  
-                </span>
-                <a href="#" class="main-menu__link">Menus & Pages</a>
-              </li>
-              <li class="main-menu__item main-menu__item--bg">
-                <span> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" baseProfile="full" viewBox="0 0 25 25" class="symbol symbol-leftBarBackgroundPanel icon"><path d="M19.5 5.5v14h-14v-14h14m0-5h-14a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5v-14a5 5 0 0 0-5-5z" stroke="none" stroke-width="1px"></path></svg>
-                </span>
-                <a href="#" class="main-menu__link">Background</a>
-              </li>
-              <li class="main-menu__item main-menu__item--add" id="addBtn">
-                <span> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" baseProfile="full" viewBox="0 0 26 25" class="symbol symbol-leftBarAddPanel icon"><path d="M12.99 0C6.189 0 .51 5.678.51 12.479.51 19.28 6.189 25 12.99 25c6.8 0 12.5-5.699 12.5-12.5S19.79 0 12.99 0zm6.676 14h-5v5h-3v-5h-5v-3h5V6h3v5h5v3z" stroke="none" stroke-width="1px"></path></svg>
-                </span>
-                <a href="#"  class="main-menu__link">Add Elements</a>
-              </li>
-              <li class="main-menu__item main-menu__item--apps">
-                <span> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" class="symbol symbol-leftBarAppMarketPanel-D icon"><g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px"><path id="Combined-Shape" d="M19 6V3h-2v3h-3v2h3v3h2V8h3V6h-3zM0 6.997C0 5.894.896 5 1.997 5h5.006C8.106 5 9 5.896 9 6.997v5.006A1.998 1.998 0 0 1 7.003 14H1.997A1.998 1.998 0 0 1 0 12.003V6.997zm0 11C0 16.894.896 16 1.997 16h5.006C8.106 16 9 16.896 9 17.997v5.006A1.998 1.998 0 0 1 7.003 25H1.997A1.998 1.998 0 0 1 0 23.003v-5.006zm11 0c0-1.103.896-1.997 1.997-1.997h5.006c1.103 0 1.997.896 1.997 1.997v5.006A1.998 1.998 0 0 1 18.003 25h-5.006A1.998 1.998 0 0 1 11 23.003v-5.006zm0-15.991C11 .898 11.897 0 13.006 0h9.988C24.102 0 25 .897 25 2.006v9.988A2.005 2.005 0 0 1 22.994 14h-9.988A2.005 2.005 0 0 1 11 11.994V2.006z" stroke="none" stroke-width="1px"></path></g></svg>
-                </span>
-                <a href="#" class="main-menu__link">Add Apps</a>
-              </li>
-              <li class="main-menu__item main-menu__item--media">
-                <span> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" class="symbol symbol-leftBarMediaPanelC icon"><path d="M21.5 21.003c.38 0 .62-.41.439-.75l-3.72-6.68a.991.991 0 0 0-1.74 0l-2.787 5.007a.3.3 0 0 1-.52.008l-.694-1.154a1.001 1.001 0 0 0-1.718-.001l-1.69 2.81a.501.501 0 0 0 .43.76h12zm-10-11c-.83 0-1.5.67-1.5 1.5 0 .82.67 1.5 1.5 1.5s1.5-.68 1.5-1.5c0-.83-.67-1.5-1.5-1.5zm10.5-3c1.66 0 3 1.34 3 3v11A3 3 0 0 1 22 24H9a3 3 0 0 1-3-2.997v-11c0-1.66 1.34-3 3-3h13zM20 4v1H9a5 5 0 0 0-5 5v7.003H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h4.172a2 2 0 0 1 1.414.585L9 2h9a2 2 0 0 1 2 2z" stroke="none" stroke-width="1px"></path></svg>
-                </span>
-                <a href="#" class="main-menu__link">Media</a>
-              </li>
-              <li class="main-menu__item main-menu__item--blog">
-                <span> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" viewBox="0 0 18 30" class="symbol symbol-leftBarNewBlogPanel icon"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px"><path d="M13.5 2h-9a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5M13.662 4H4.338a.5.5 0 0 0-.464.314L.001 14l8 16h.5V16.929a1.997 1.997 0 0 1 .06-3.882A2.002 2.002 0 0 1 11.002 15c0 .931-.64 1.706-1.5 1.929V30h.5l8-16-3.878-9.686A.5.5 0 0 0 13.663 4" stroke="none" stroke-width="1px"></path></g></svg> 
-                </span>
-                <a href="#" class="main-menu__link">Start Blogging</a>
-              </li>
-              <li class="main-menu__item main-menu__item--marketing">
-                <span> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="29" viewBox="0 0 27 29" class="symbol symbol-leftBarWixBookingsPanel icon"><path fill-rule="evenodd" d="M23.849 23.5H3.151a2 2 0 0 1-1.923-2.549L2.5 16.5h6.6v3h1.846v-3h4.63a19.091 19.091 0 0 0-.49 3h1.976a12.058 12.058 0 0 1 .313-3H24.5l1.272 4.451a2 2 0 0 1-1.923 2.549zM20.04 12.39v-1.867h-6.214v2h3.754A7.058 7.058 0 0 0 16.049 15h-5.1v-4.477H9.478c-.057.38-.463.87-2.477.87V13H9.1v2H2.5V7.5a3 3 0 0 1 3-3h1.562V5a1.5 1.5 0 0 0 3 0v-.5h6.875V5a1.5 1.5 0 0 0 3 0v-.5H21.5a3 3 0 0 1 3 3V15h-6.65a5.221 5.221 0 0 1 2.19-2.61zM7.062 2a1.5 1.5 0 0 1 3 0v2.5h-3V2zm9.875 0a1.5 1.5 0 0 1 3 0v2.5h-3V2zM21 27.5H6A2.5 2.5 0 0 1 3.5 25h20a2.5 2.5 0 0 1-2.5 2.5z" stroke="none" stroke-width="1px"></path></svg>
-                </span>
-                <a href="#" class="main-menu__link">Email Marketing</a>
-              </li>
-              <li class="main-menu__item main-menu__item--booking">
-                <span> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 22 26" class="symbol symbol-leftBarPagesPanelManager icon"><path fill-rule="evenodd" d="M17 0a5 5 0 0 1 5 5v16a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h12zm0 20V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1zM8 10V8h6v2H8zm0 4v-2h6v2H8zm0 4v-2h6v2H8z" stroke="none" stroke-width="1px"></path></svg>  
-                </span>
-                <a href="#" class="main-menu__link">Booking</a>
-              </li>
-              <li class="main-menu__item main-menu__item--data">
-                <span> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" class="symbol symbol-wixDataPanel icon"><path fill-rule="evenodd" d="M0 18.522c2.046 1.425 5.979 2.391 10.5 2.391s8.454-.966 10.5-2.39v1.622c0 .984-.567 1.87-1.446 2.26C17.355 23.383 14.117 24 10.5 24c-3.615 0-6.855-.618-9.054-1.594A2.462 2.462 0 0 1 0 20.146v-1.624zM10.5 0c3.617 0 6.855.618 9.054 1.594A2.462 2.462 0 0 1 21 3.855v.007c0 .984-.567 1.871-1.446 2.261-2.199.976-5.437 1.595-9.054 1.595s-6.855-.619-9.054-1.595A2.462 2.462 0 0 1 0 3.863v-.008c0-.984.567-1.87 1.446-2.26C3.645.617 6.883 0 10.5 0zM0 13.044c2.046 1.425 5.979 2.391 10.5 2.391s8.454-.966 10.5-2.39v1.622c0 .984-.567 1.87-1.446 2.26-2.199.977-5.437 1.595-9.054 1.595-3.615 0-6.855-.618-9.054-1.594A2.462 2.462 0 0 1 0 14.668v-1.624zm0-5.326c2.046 1.424 5.979 2.39 10.5 2.39s8.454-.966 10.5-2.39V9.34c0 .984-.567 1.87-1.446 2.26-2.199.976-5.437 1.594-9.054 1.594-3.615 0-6.855-.617-9.054-1.594A2.462 2.462 0 0 1 0 9.341V7.718z" stroke="none" stroke-width="1px"></path></svg>
-                </span>
-                <a href="#" class="main-menu__link">Data</a>
-              </li>
+  <!-- Main Menu Navbar -->
+        <ul class="main-menu">
+          <li class="main-menu__item main-menu__item--pages">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 22 26"
+                class="symbol symbol-leftBarPagesPanelManager icon">
+                <path fill-rule="evenodd"
+                  d="M17 0a5 5 0 0 1 5 5v16a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h12zm0 20V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1zM8 10V8h6v2H8zm0 4v-2h6v2H8zm0 4v-2h6v2H8z"
+                  stroke="none" stroke-width="1px"></path>
+              </svg>
+            </span>
+            <a href="#" class="main-menu__link">Menus & Pages</a>
+          </li>
+          <li class="main-menu__item main-menu__item--bg">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" baseProfile="full" viewBox="0 0 25 25"
+                class="symbol symbol-leftBarBackgroundPanel icon">
+                <path
+                  d="M19.5 5.5v14h-14v-14h14m0-5h-14a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5v-14a5 5 0 0 0-5-5z"
+                  stroke="none" stroke-width="1px"></path>
+              </svg>
+            </span>
+            <a href="#" class="main-menu__link">Background</a>
+          </li>
+          <li class="main-menu__item main-menu__item--add" id="addElementsBtn">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" baseProfile="full" viewBox="0 0 26 25"
+                class="symbol symbol-leftBarAddPanel icon">
+                <path
+                  d="M12.99 0C6.189 0 .51 5.678.51 12.479.51 19.28 6.189 25 12.99 25c6.8 0 12.5-5.699 12.5-12.5S19.79 0 12.99 0zm6.676 14h-5v5h-3v-5h-5v-3h5V6h3v5h5v3z"
+                  stroke="none" stroke-width="1px"></path>
+              </svg>
+            </span>
+            <a href="#" class="main-menu__link">Add Elements</a>
+          </li>
+          <li class="main-menu__item main-menu__item--apps">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                class="symbol symbol-leftBarAppMarketPanel-D icon">
+                <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px">
+                  <path id="Combined-Shape"
+                    d="M19 6V3h-2v3h-3v2h3v3h2V8h3V6h-3zM0 6.997C0 5.894.896 5 1.997 5h5.006C8.106 5 9 5.896 9 6.997v5.006A1.998 1.998 0 0 1 7.003 14H1.997A1.998 1.998 0 0 1 0 12.003V6.997zm0 11C0 16.894.896 16 1.997 16h5.006C8.106 16 9 16.896 9 17.997v5.006A1.998 1.998 0 0 1 7.003 25H1.997A1.998 1.998 0 0 1 0 23.003v-5.006zm11 0c0-1.103.896-1.997 1.997-1.997h5.006c1.103 0 1.997.896 1.997 1.997v5.006A1.998 1.998 0 0 1 18.003 25h-5.006A1.998 1.998 0 0 1 11 23.003v-5.006zm0-15.991C11 .898 11.897 0 13.006 0h9.988C24.102 0 25 .897 25 2.006v9.988A2.005 2.005 0 0 1 22.994 14h-9.988A2.005 2.005 0 0 1 11 11.994V2.006z"
+                    stroke="none" stroke-width="1px"></path>
+                </g>
+              </svg>
+            </span>
+            <a href="#" class="main-menu__link">Add Apps</a>
+          </li>
+          <li class="main-menu__item main-menu__item--media">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                class="symbol symbol-leftBarMediaPanelC icon">
+                <path
+                  d="M21.5 21.003c.38 0 .62-.41.439-.75l-3.72-6.68a.991.991 0 0 0-1.74 0l-2.787 5.007a.3.3 0 0 1-.52.008l-.694-1.154a1.001 1.001 0 0 0-1.718-.001l-1.69 2.81a.501.501 0 0 0 .43.76h12zm-10-11c-.83 0-1.5.67-1.5 1.5 0 .82.67 1.5 1.5 1.5s1.5-.68 1.5-1.5c0-.83-.67-1.5-1.5-1.5zm10.5-3c1.66 0 3 1.34 3 3v11A3 3 0 0 1 22 24H9a3 3 0 0 1-3-2.997v-11c0-1.66 1.34-3 3-3h13zM20 4v1H9a5 5 0 0 0-5 5v7.003H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h4.172a2 2 0 0 1 1.414.585L9 2h9a2 2 0 0 1 2 2z"
+                  stroke="none" stroke-width="1px"></path>
+              </svg>
+            </span>
+            <a href="#" class="main-menu__link">Media</a>
+          </li>
+          <li class="main-menu__item main-menu__item--blog">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" viewBox="0 0 18 30"
+                class="symbol symbol-leftBarNewBlogPanel icon">
+                <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px">
+                  <path
+                    d="M13.5 2h-9a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5M13.662 4H4.338a.5.5 0 0 0-.464.314L.001 14l8 16h.5V16.929a1.997 1.997 0 0 1 .06-3.882A2.002 2.002 0 0 1 11.002 15c0 .931-.64 1.706-1.5 1.929V30h.5l8-16-3.878-9.686A.5.5 0 0 0 13.663 4"
+                    stroke="none" stroke-width="1px"></path>
+                </g>
+              </svg>
+            </span>
+            <a href="#" class="main-menu__link">Start Blogging</a>
+          </li>
+          <li class="main-menu__item main-menu__item--marketing">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="29" viewBox="0 0 27 29"
+                class="symbol symbol-leftBarWixBookingsPanel icon">
+                <path fill-rule="evenodd"
+                  d="M23.849 23.5H3.151a2 2 0 0 1-1.923-2.549L2.5 16.5h6.6v3h1.846v-3h4.63a19.091 19.091 0 0 0-.49 3h1.976a12.058 12.058 0 0 1 .313-3H24.5l1.272 4.451a2 2 0 0 1-1.923 2.549zM20.04 12.39v-1.867h-6.214v2h3.754A7.058 7.058 0 0 0 16.049 15h-5.1v-4.477H9.478c-.057.38-.463.87-2.477.87V13H9.1v2H2.5V7.5a3 3 0 0 1 3-3h1.562V5a1.5 1.5 0 0 0 3 0v-.5h6.875V5a1.5 1.5 0 0 0 3 0v-.5H21.5a3 3 0 0 1 3 3V15h-6.65a5.221 5.221 0 0 1 2.19-2.61zM7.062 2a1.5 1.5 0 0 1 3 0v2.5h-3V2zm9.875 0a1.5 1.5 0 0 1 3 0v2.5h-3V2zM21 27.5H6A2.5 2.5 0 0 1 3.5 25h20a2.5 2.5 0 0 1-2.5 2.5z"
+                  stroke="none" stroke-width="1px"></path>
+              </svg>
+            </span>
+            <a href="#" class="main-menu__link">Email Marketing</a>
+          </li>
+          <li class="main-menu__item main-menu__item--booking">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 22 26"
+                class="symbol symbol-leftBarPagesPanelManager icon">
+                <path fill-rule="evenodd"
+                  d="M17 0a5 5 0 0 1 5 5v16a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h12zm0 20V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1zM8 10V8h6v2H8zm0 4v-2h6v2H8zm0 4v-2h6v2H8z"
+                  stroke="none" stroke-width="1px"></path>
+              </svg>
+            </span>
+            <a href="#" class="main-menu__link">Booking</a>
+          </li>
+          <li class="main-menu__item main-menu__item--data">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24"
+                class="symbol symbol-wixDataPanel icon">
+                <path fill-rule="evenodd"
+                  d="M0 18.522c2.046 1.425 5.979 2.391 10.5 2.391s8.454-.966 10.5-2.39v1.622c0 .984-.567 1.87-1.446 2.26C17.355 23.383 14.117 24 10.5 24c-3.615 0-6.855-.618-9.054-1.594A2.462 2.462 0 0 1 0 20.146v-1.624zM10.5 0c3.617 0 6.855.618 9.054 1.594A2.462 2.462 0 0 1 21 3.855v.007c0 .984-.567 1.871-1.446 2.261-2.199.976-5.437 1.595-9.054 1.595s-6.855-.619-9.054-1.595A2.462 2.462 0 0 1 0 3.863v-.008c0-.984.567-1.87 1.446-2.26C3.645.617 6.883 0 10.5 0zM0 13.044c2.046 1.425 5.979 2.391 10.5 2.391s8.454-.966 10.5-2.39v1.622c0 .984-.567 1.87-1.446 2.26-2.199.977-5.437 1.595-9.054 1.595-3.615 0-6.855-.618-9.054-1.594A2.462 2.462 0 0 1 0 14.668v-1.624zm0-5.326c2.046 1.424 5.979 2.39 10.5 2.39s8.454-.966 10.5-2.39V9.34c0 .984-.567 1.87-1.446 2.26-2.199.976-5.437 1.594-9.054 1.594-3.615 0-6.855-.617-9.054-1.594A2.462 2.462 0 0 1 0 9.341V7.718z"
+                  stroke="none" stroke-width="1px"></path>
+              </svg>
+            </span>
+            <a href="#" class="main-menu__link">Data</a>
+          </li>
+        </ul>
+  <!-- END OF Main Menu Navbar -->
 
-</ul>
-
-            <!-- START PANEL -->
-<div class="panel">
-
-<!-- START ACCORDION -->
-  <!-- item 1 -->
-<button class="category">
-      Basic
-    <img src="./assets/icons/minus_icon.svg" class="minusIcon" alt="minus icon">
-</button>
-  <div class="category__content">
-
-    <a href="#" class="icon">
-      <span href="#" class="icon__element">
-        <img src="./assets/icons/text_icon.svg" alt="Text Element Icon">
-      </span>
-        Text
-    </a>
-    <a href="#" class="icon">
-      <span href="#" class="icon__element">
-        <img src="./assets/icons/img_icon.svg" alt="Image Element Icon">
-      </span>
-        Image
-    </a>
-    <a href="#" class="icon">
-      <span href="#" class="icon__element">
-        <img src="./assets/icons/box_icon.svg" alt="Box Element Icon">
-      </span>
-        Box
-    </a>
-    <a href="#" class="icon">
-      <span href="#" class="icon__element">
-        <img src="./assets/icons/gallery_icon.svg" alt="Gallery Element Icon">
-      </span>
-        Gallery
-    </a>
-    <a href="#" class="icon">
-      <span href="#" class="icon__element">
-        <img src="./assets/icons/shape_icon.svg" alt="Shape Element Icon">
-      </span>
-        Shape
-    </a>
-    <a href="#" class="icon">
-      <span href="#" class="icon__element">
-        <img src="./assets/icons/vector_icon.svg" alt="Vector Element Icon">
-      </span>
-        Vector
-    </a>
-    <a href="#modal"  class="icon" id="ref">
-      <span href="#" class="icon__element">
-        <img src="./assets/icons/button_icon.svg" alt="Button Element Icon">
-      </span>
-        Button
-    </a>
-    <a href="#" class="icon" >
-      <span href="#" class="icon__element">
-        <img src="./assets/icons/video_icon.svg" alt="Video Element Icon">
-      </span>
-        Video
-    </a>
-    <a href="#" class="icon">
-      <span href="#" class="icon__element">
-        <img src="./assets/icons/strips_icon.svg" alt="Strips Element Icon">
-      </span>
-        Strips
-    </a>
-  
   </div>
+<!-- END OF leftbar Footer WRAPPER for main menu -->
+
+<div id="panel" class="panel">
+
+  <!-- popup msg -->
+
+
+
+  <div class="panel__top">
+
+    <div class="panel__top__return">
+      <button class="returnBtn">
+        <img src="./assets/icons/chev-left.svg" alt="Return Icon">
+      </button>
+    </div>
+
+      <div class="panel__top__info">
+        <img src="./assets/icons/info_btn.svg" alt="Info Button">
+        <h4>
+          <span>Customizing</span>
+          Add Elements
+        </h4>
+      </div>
+   </div>
+
+
+    <div class="panel__body">
+      <!-- Accordion -->
+      <button class="category">
+        Basic
+      <img src="./assets/icons/minus_icon.svg" class="minusIcon" alt="minus icon">
+      </button>
+      <div class="category__content">
+
+        <a href="#" class="element">
+          <span href="#" class="element__icon">
+            <img src="./assets/icons/text_icon.svg" alt="Text Element Icon">
+          </span>
+            Text
+        </a>
+        <a href="#" class="element">
+          <span href="#" class="element__icon">
+            <img src="./assets/icons/img_icon.svg" alt="Image Element Icon">
+          </span>
+            Image
+        </a>
+        <a href="#" class="element">
+          <span href="#" class="element__icon">
+            <img src="./assets/icons/box_icon.svg" alt="Box Element Icon">
+          </span>
+            Box
+        </a>
+        <a href="#" class="element">
+          <span href="#" class="element__icon">
+            <img src="./assets/icons/gallery_icon.svg" alt="Gallery Element Icon">
+          </span>
+            Gallery
+        </a>
+        <a href="#" class="element">
+          <span href="#" class="element__icon">
+            <img src="./assets/icons/shape_icon.svg" alt="Shape Element Icon">
+          </span>
+            Shape
+        </a>
+        <a href="#" class="element">
+          <span href="#" class="element__icon">
+            <img src="./assets/icons/vector_icon.svg" alt="Vector Element Icon">
+          </span>
+            Vector
+        </a>
+        <a href="#modal"  class="element" id="ref">
+          <span href="#" class="element__icon">
+            <img src="./assets/icons/button_icon.svg" alt="Button Element Icon">
+          </span>
+            Button
+        </a>
+
+
+
+        <a href="#" class="element" >
+          <span href="#" class="element__icon">
+            <img src="./assets/icons/video_icon.svg" alt="Video Element Icon">
+          </span>
+            Video
+        </a>
+        <a href="#" class="element">
+          <span href="#" class="element__icon">
+            <img src="./assets/icons/strips_icon.svg" alt="Strips Element Icon">
+          </span>
+            Strips
+        </a>
+      
+      </div>
 
         <!-- item 2 -->
-    <button class="category">
-      Extras
-      <img src="./assets/icons/minus_icon.svg" class="minusIcon" alt="minus icon">
-
-    </button>
+        <button class="category">
+          Extras
+          <img src="./assets/icons/minus_icon.svg" class="minusIcon" alt="minus icon">
     
-         <div class="category__content">
-  
-          <a href="#" class="icon">
-            <span href="#" class="icon__element">
-              <img src="./assets/icons/strips_icon.svg" alt="Strips Element Icon">
-            </span>
-              Strips
-          </a>
-          
-          <a href="#"  id="button-a" class="icon">
-            <span href="#" class="icon__element">
-              <img src="./assets/icons/blog_icon.svg" alt="Blog Element Icon">
-            </span>
-              Blog
-          </a>
+        </button>
         
-          <a href="#" class="icon">
-            <span href="#" class="icon__element">
-              <img src="./assets/icons/strips_icon.svg" alt="Menu Element Icon">
-            </span>
-              Menu
-          </a>
-        
-          <a href="#" class="icon">
-            <span href="#" class="icon__element">
-              <img src="./assets/icons/forms_icon.svg" alt="Forms Element Icon">
-            </span>
-              Forms
-          </a>
-        
-          <a href="#" class="icon">
-            <span href="#" class="icon__element">
-              <img src="./assets/icons/interactive_icon.svg" alt="Interactive Element Icon">
-            </span>
-              Interactive
-          </a>
-        
-          <a href="#" class="icon">
-            <span href="#" class="icon__element">
-              <img src="./assets/icons/music_icon.svg" alt="Music Element Icon">
-            </span>
-              Music
-          </a>
-        
-          <a href="#" class="icon">
-            <span href="#" class="icon__element">
-              <img src="./assets/icons/members_icon.svg" alt="Members Element Icon">
-            </span>
-              Members
-          </a>
-         </div>
-
-        <!-- item 3 -->
-    <button class="category">
-      Commernce
-      <img src="./assets/icons/minus_icon.svg" class="minusIcon" alt="minus icon">
-    </button>
-         <div class="category__content">
-         
-  <a href="#" class="icon">
-    <span href="#" class="icon__element">
-      <img src="./assets/icons/socials_icon.svg" alt="Socials Element Icon">
-    </span>
-      Socials
-  </a>
-
-  <a href="#" class="icon">
-    <span href="#" class="icon__element">
-      <img src="./assets/icons/shop_icon.svg" alt="Shop Element Icon">
-    </span>
-    Shop
-  </a>
-
-  <a href="#" class="icon">
-    <span href="#" class="icon__element">
-      <img src="./assets/icons/content_manager_icon.svg" alt="Content Manager Element Icon">
-    </span>
-    Content Manager
-  </a>
-         </div>
-     
-        <!-- END ACCORDION -->
-
-        <!-- modal -->
-
-        <!-- END MODAL -->
-      </div>
-            <!-- END OF PANEL -->
-
-            
-  </div>
-
-  <div class="leftbar__footer">
-    <button class="hideControlsBtn">
-      <span>
-        <img src="./assets/icons/leftCircleChev.svg" alt="Hide Controls Icon">
-      </span>
-      Hide Controls
-    </button>
-  </div>
-   
-</div> 
-        </div>
-
-              <div class="stage">
-                  STAGE
-
-
-
-
-
-
-                  <div class="modal">
-
-                    <div class="popper__arrow" x-arrow="" style="left: 89px;"></div>
-
-
-                    <div class="modal__top">
-                      <h3>Add a Button</h3>
-  
-                      <div class="btn-grp">
-                        <img src="./assets/icons/btn_qm.svg" alt="">
-                        <img src="./assets/icons/btn_close.svg" class="close" alt="">
-                      </div>
-  
-                    </div>
-                    <div class="modal__sub">
-                      <a href="#" class="modal__sub__btn">Themed Buttons</a>
-                      <a href="#" class="modal__sub__btn">Text Buttons</a>
-                      <a href="#" class="modal__sub__btn">Icon Buttons</a>
-                    </div>
-                    <div class="modal__content">
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, amet nesciunt! Dolore eos libero voluptatibus dolores consectetur fuga velit eum perspiciatis impedit fugiat atque architecto, officiis ducimus, maxime voluptate maiores, esse quisquam nulla nisi alias. Perferendis laboriosam minus fugit, vero distinctio molestias! Praesentium deserunt dicta totam porro possimus eligendi dignissimos, sed, voluptas soluta blanditiis quis dolor esse exercitationem aliquam harum beatae incidunt enim quae, facere deleniti officiis iure culpa. Maxime, enim blanditiis odio aliquid quae aspernatur, ipsa labore porro incidunt voluptatibus suscipit, minima quibusdam dolores corporis voluptatum perferendis. Totam numquam harum reprehenderit, accusantium voluptates ratione vitae excepturi beatae, corrupti illum itaque est quam unde quo quibusdam repellat sapiente rem. Adipisci aliquid ad libero. Impedit assumenda possimus nam adipisci porro veniam non et! Repellendus tenetur necessitatibus at perspiciatis eveniet dolores quisquam porro mollitia explicabo soluta, voluptatum natus libero accusantium assumenda. Eligendi perspiciatis doloremque totam, maiores ipsum similique fuga a sunt. Id non rem dolor laboriosam quibusdam esse beatae illum vitae nostrum deleniti nihil iure, quae hic accusamus deserunt quia atque consequatur veritatis assumenda quidem dolore quisquam excepturi molestias pariatur! Nam velit sit facilis eaque, necessitatibus iste exercitationem iure quam quia dolorem, quod molestiae. Natus necessitatibus recusandae quaerat quas ipsa ipsum laboriosam, nisi repudiandae voluptate fugit eligendi hic maiores quae voluptatem laborum architecto accusantium asperiores assumenda suscipit. Unde laudantium ipsam nobis adipisci numquam, dolorum, impedit sit natus recusandae optio, perferendis harum tempore ab? Esse, ad. Voluptate minus qui similique nemo eligendi. Voluptatem fugit unde veniam neque veritatis modi aliquid, soluta, nisi vel tempore hic ad dolores optio! Iste fugit, provident modi quas et distinctio quasi voluptatem! Adipisci mollitia, quod totam reprehenderit nesciunt obcaecati consectetur aut modi rem commodi, quis eveniet voluptatum! Dolorem iusto reprehenderit expedita vero? Numquam a ipsa animi reprehenderit ratione veritatis, error quam officiis ut, doloremque fugit inventore dolores. Aspernatur ipsam maxime eaque est suscipit quasi ut nesciunt. Ipsam corporis ea corrupti dolorem voluptates molestiae distinctio quae aliquam expedita odit modi a, voluptatibus id obcaecati vitae laboriosam, hic consequatur rem dolores quidem soluta eligendi est earum sed! Tenetur deleniti quaerat amet recusandae pariatur at culpa laborum cupiditate consequuntur, dolorum nihil doloremque perferendis sequi quam veritatis a ratione? Omnis, tempore repudiandae ea cumque corrupti nostrum maiores quos fuga voluptate! Facere reiciendis labore debitis. Modi, tenetur nobis. Vero animi atque, quos odio dolor placeat consequuntur blanditiis ratione error! Ex quis quibusdam dolorem delectus eveniet deserunt, officiis numquam sequi facilis! Optio excepturi aperiam, eum deserunt accusamus repellat ab quasi illum pariatur dolorem corrupti ex, iste obcaecati magnam nihil error fuga recusandae in mollitia, voluptate fugiat? Laudantium sed harum earum nulla, incidunt, velit ea adipisci numquam, perspiciatis reiciendis tempora fuga iusto mollitia autem sit excepturi fugit voluptatum! A recusandae inventore ullam. Expedita obcaecati laudantium amet voluptas fugit aut tempore rerum repellat reiciendis voluptatibus nisi fugiat eius dolor maiores assumenda eligendi, corporis omnis aliquid? Similique iusto, quam suscipit ullam, dolore recusandae maiores eius repellendus obcaecati alias placeat soluta molestias voluptatibus atque quod nihil quo asperiores harum architecto totam doloribus saepe in. Deleniti vel consectetur cum tenetur, dolore non sint hic enim nulla necessitatibus facere fuga dolores similique aspernatur impedit quae autem. Numquam qui quae omnis aperiam quasi eaque provident dicta, repellendus atque? Iure reiciendis accusamus reprehenderit maiores ea officiis minima quae earum similique iusto et, hic distinctio doloremque maxime nihil optio quos nobis expedita nam facere impedit repellat sequi exercitationem libero? Unde esse harum totam dignissimos quam ab sunt rerum eveniet velit, error vero, in est sapiente magnam. Fugiat quod dignissimos eos reprehenderit laborum est veniam esse libero natus, vitae doloremque ipsam cupiditate, explicabo vero tenetur necessitatibus beatae! Dolore ab dolorum at, omnis praesentium aspernatur aliquid ipsa assumenda ea possimus? Nihil mollitia cumque nisi labore, excepturi, expedita asperiores maxime facilis voluptate perspiciatis sequi harum totam earum vitae quos voluptatem qui repudiandae libero inventore. Dicta iste amet facilis, dolorem sit culpa ratione! At neque consequatur officia odio nihil eveniet aspernatur, explicabo tempora recusandae nam corporis, sapiente autem. Dolores asperiores esse, corporis fugiat ullam corrupti tempore animi beatae incidunt obcaecati amet dicta quibusdam nulla architecto quae eius sunt? Veniam, eaque cupiditate velit perferendis commodi, laboriosam ducimus repudiandae dolore magni maiores quia doloribus ex hic perspiciatis inventore saepe quod quasi quis dolorem a! Earum, aut eius! Labore, dolores nihil dolorem aperiam voluptates et incidunt neque sunt minima laboriosam similique ullam consequuntur, cumque assumenda inventore? Omnis fugiat ipsum et unde ab repudiandae, aliquid, quo fuga blanditiis quae harum temporibus aspernatur eum, ea laudantium nisi eveniet magnam facere accusamus eius eos. Itaque tempora quaerat omnis id officia laborum, repellendus a qui fuga assumenda porro debitis nihil, quidem, eligendi nisi libero pariatur rem. Accusantium quidem magni blanditiis tenetur eum id, odio inventore excepturi rerum! Voluptatibus eligendi numquam recusandae culpa itaque incidunt quis cumque reiciendis necessitatibus atque unde dicta accusamus quidem, neque ducimus. Blanditiis accusamus dolores, exercitationem corporis consequuntur in! Velit enim saepe ab hic minus cum quod eos ad praesentium nihil nostrum, voluptas quaerat temporibus illo atque quis. Debitis veniam expedita odit. Doloribus facere porro, eveniet ab quisquam, quam nesciunt, saepe ducimus repellat nemo nisi. Quaerat tenetur voluptatem est eligendi repudiandae eveniet sint non architecto minus maiores voluptatum, facilis ab voluptates accusamus obcaecati praesentium harum quia atque dignissimos reprehenderit! Asperiores laudantium alias rem fugiat, sunt corrupti dolores nostrum ad! Esse voluptates ipsa ea facere excepturi! Maxime cumque earum dolor qui in quibusdam, doloremque nemo delectus, libero voluptatum similique nulla optio quasi beatae vitae dolores odit aliquid? Molestias doloremque odit fugiat ducimus!
-                      </p>
-                    </div>
-                  </div>
-
-
-
-
-
-
-              </div>
-
+             <div class="category__content">
+      
+              <a href="#" class="element" draggable="true">
+                <span href="#" class="element__icon">
+                  <img src="./assets/icons/strips_icon.svg" alt="Strips Element Icon">
+                </span>
+                  Strips
+              </a>
 
 
 
               
-      </main>
-      <!-- END OF Main Container for leftbar and the stage -->
+              <a href="#"  id="button-a" class="element" draggable="true">
+                <span href="#" class="element__icon">
+                  <img src="./assets/icons/blog_icon.svg" alt="Blog Element Icon">
+                </span>
+                  Blog
+              </a>
+            
+              <a href="#" class="element" draggable="true">
+                <span href="#" class="element__icon">
+                  <img src="./assets/icons/strips_icon.svg" alt="Menu Element Icon">
+                </span>
+                  Menu
+              </a>
+            
+              <a href="#" class="element" draggable="true">
+                <span href="#" class="element__icon">
+                  <img src="./assets/icons/forms_icon.svg" alt="Forms Element Icon">
+                </span>
+                  Forms
+              </a>
+            
+              <a href="#" class="element" draggable="true">
+                <span href="#" class="element__icon">
+                  <img src="./assets/icons/interactive_icon.svg" alt="Interactive Element Icon">
+                </span>
+                  Interactive
+              </a>
+            
+              <a href="#" class="element" draggable="true">
+                <span href="#" class="element__icon">
+                  <img src="./assets/icons/music_icon.svg" alt="Music Element Icon">
+                </span>
+                  Music
+              </a>
+            
+              <a href="#" class="element" draggable="true">
+                <span href="#" class="element__icon">
+                  <img src="./assets/icons/members_icon.svg" alt="Members Element Icon">
+                </span>
+                  Members
+              </a>
+             </div>
+    
+            <!-- item 3 -->
+        <button class="category">
+          Commernce
+          <img src="./assets/icons/minus_icon.svg" class="minusIcon" alt="minus icon">
+        </button>
+             <div class="category__content">
+             
+      <a href="#" class="element" draggable="true">
+        <span href="#" class="element__icon">
+          <img src="./assets/icons/socials_icon.svg" alt="Socials Element Icon">
+        </span>
+          Socials
+      </a>
+    
+      <a href="#" class="element" draggable="true">
+        <span href="#" class="element__icon">
+          <img src="./assets/icons/shop_icon.svg" alt="Shop Element Icon">
+        </span>
+        Shop
+      </a>
+    
+      <a href="#" class="element" draggable="true">
+        <span href="#" class="element__icon">
+          <img src="./assets/icons/content_manager_icon.svg" alt="Content Manager Element Icon">
+        </span>
+        Content Manager
+      </a>
+    </div>
+      <!-- END OF Accordion -->
 
-      <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="js/app.js"></script>
+    </div>
+
+
+    <div class="modal">
+      <div class="modal__arrow" x-arrow="" style="left: 89px;"></div>
+      <div class="modal__top">
+        <h3>Add a Button</h3>
+
+        <div class="btn-grp">
+          <img src="./assets/icons/btn_qm.svg" alt="">
+          <img src="./assets/icons/btn_close.svg" class="close" alt="">
+        </div>
+
+      </div>
+      <div class="modal__sub">
+        <a href="#" class="modal__sub__btn">Themed Buttons</a>
+        <a href="#" class="modal__sub__btn">Text Buttons</a>
+        <a href="#" class="modal__sub__btn">Icon Buttons</a>
+      </div>
+      <div class="modal__content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, amet nesciunt! Dolore eos libero voluptatibus dolores consectetur fuga velit eum perspiciatis impedit fugiat atque architecto, officiis ducimus, maxime voluptate maiores, esse quisquam nulla nisi alias. Perferendis laboriosam minus fugit, vero distinctio molestias! Praesentium deserunt dicta totam porro possimus eligendi dignissimos, sed, voluptas soluta blanditiis quis dolor esse exercitationem aliquam harum beatae incidunt enim quae, facere deleniti officiis iure culpa. Maxime, enim blanditiis odio aliquid quae aspernatur, ipsa labore porro incidunt voluptatibus suscipit, minima quibusdam dolores corporis voluptatum perferendis. Totam numquam harum reprehenderit, accusantium voluptates ratione vitae excepturi beatae, corrupti illum itaque est quam unde quo quibusdam repellat sapiente rem. Adipisci aliquid ad libero. Impedit assumenda possimus nam adipisci porro veniam non et! Repellendus tenetur necessitatibus at perspiciatis eveniet dolores quisquam porro mollitia explicabo soluta, voluptatum natus libero accusantium assumenda. Eligendi perspiciatis doloremque totam, maiores ipsum similique fuga a sunt. Id non rem dolor laboriosam quibusdam esse beatae illum vitae nostrum deleniti nihil iure, quae hic accusamus deserunt quia atque consequatur veritatis assumenda quidem dolore quisquam excepturi molestias pariatur! Nam velit sit facilis eaque, necessitatibus iste exercitationem iure quam quia dolorem, quod molestiae. Natus necessitatibus recusandae quaerat quas ipsa ipsum laboriosam, nisi repudiandae voluptate fugit eligendi hic maiores quae voluptatem laborum architecto accusantium asperiores assumenda suscipit. Unde laudantium ipsam nobis adipisci numquam, dolorum, impedit sit natus recusandae optio, perferendis harum tempore ab? Esse, ad. Voluptate minus qui similique nemo eligendi. Voluptatem fugit unde veniam neque veritatis modi aliquid, soluta, nisi vel tempore hic ad dolores optio! Iste fugit, provident modi quas et distinctio quasi voluptatem! Adipisci mollitia, quod totam reprehenderit nesciunt obcaecati consectetur aut modi rem commodi, quis eveniet voluptatum! Dolorem iusto reprehenderit expedita vero? Numquam a ipsa animi reprehenderit ratione veritatis, error quam officiis ut, doloremque fugit inventore dolores. Aspernatur ipsam maxime eaque est suscipit quasi ut nesciunt. Ipsam corporis ea corrupti dolorem voluptates molestiae distinctio quae aliquam expedita odit modi a, voluptatibus id obcaecati vitae laboriosam, hic consequatur rem dolores quidem soluta eligendi est earum sed! Tenetur deleniti quaerat amet recusandae pariatur at culpa laborum cupiditate consequuntur, dolorum nihil doloremque perferendis sequi quam veritatis a ratione? Omnis, tempore repudiandae ea cumque corrupti nostrum maiores quos fuga voluptate! Facere reiciendis labore debitis. Modi, tenetur nobis. Vero animi atque, quos odio dolor placeat consequuntur blanditiis ratione error! Ex quis quibusdam dolorem delectus eveniet deserunt, officiis numquam sequi facilis! Optio excepturi aperiam, eum deserunt accusamus repellat ab quasi illum pariatur dolorem corrupti ex, iste obcaecati magnam nihil error fuga recusandae in mollitia, voluptate fugiat? Laudantium sed harum earum nulla, incidunt, velit ea adipisci numquam, perspiciatis reiciendis tempora fuga iusto mollitia autem sit excepturi fugit voluptatum! A recusandae inventore ullam. Expedita obcaecati laudantium amet voluptas fugit aut tempore rerum repellat reiciendis voluptatibus nisi fugiat eius dolor maiores assumenda eligendi, corporis omnis aliquid? Similique iusto, quam suscipit ullam, dolore recusandae maiores eius repellendus obcaecati alias placeat soluta molestias voluptatibus atque quod nihil quo asperiores harum architecto totam doloribus saepe in. Deleniti vel consectetur cum tenetur, dolore non sint hic enim nulla necessitatibus facere fuga dolores similique aspernatur impedit quae autem. Numquam qui quae omnis aperiam quasi eaque provident dicta, repellendus atque? Iure reiciendis accusamus reprehenderit maiores ea officiis minima quae earum similique iusto et, hic distinctio doloremque maxime nihil optio quos nobis expedita nam facere impedit repellat sequi exercitationem libero? Unde esse harum totam dignissimos quam ab sunt rerum eveniet velit, error vero, in est sapiente magnam. Fugiat quod dignissimos eos reprehenderit laborum est veniam esse libero natus, vitae doloremque ipsam cupiditate, explicabo vero tenetur necessitatibus beatae! Dolore ab dolorum at, omnis praesentium aspernatur aliquid ipsa assumenda ea possimus? Nihil mollitia cumque nisi labore, excepturi, expedita asperiores maxime facilis voluptate perspiciatis sequi harum totam earum vitae quos voluptatem qui repudiandae libero inventore. Dicta iste amet facilis, dolorem sit culpa ratione! At neque consequatur officia odio nihil eveniet aspernatur, explicabo tempora recusandae nam corporis, sapiente autem. Dolores asperiores esse, corporis fugiat ullam corrupti tempore animi beatae incidunt obcaecati amet dicta quibusdam nulla architecto quae eius sunt? Veniam, eaque cupiditate velit perferendis commodi, laboriosam ducimus repudiandae dolore magni maiores quia doloribus ex hic perspiciatis inventore saepe quod quasi quis dolorem a! Earum, aut eius! Labore, dolores nihil dolorem aperiam voluptates et incidunt neque sunt minima laboriosam similique ullam consequuntur, cumque assumenda inventore? Omnis fugiat ipsum et unde ab repudiandae, aliquid, quo fuga blanditiis quae harum temporibus aspernatur eum, ea laudantium nisi eveniet magnam facere accusamus eius eos. Itaque tempora quaerat omnis id officia laborum, repellendus a qui fuga assumenda porro debitis nihil, quidem, eligendi nisi libero pariatur rem. Accusantium quidem magni blanditiis tenetur eum id, odio inventore excepturi rerum! Voluptatibus eligendi numquam recusandae culpa itaque incidunt quis cumque reiciendis necessitatibus atque unde dicta accusamus quidem, neque ducimus. Blanditiis accusamus dolores, exercitationem corporis consequuntur in! Velit enim saepe ab hic minus cum quod eos ad praesentium nihil nostrum, voluptas quaerat temporibus illo atque quis. Debitis veniam expedita odit. Doloribus facere porro, eveniet ab quisquam, quam nesciunt, saepe ducimus repellat nemo nisi. Quaerat tenetur voluptatem est eligendi repudiandae eveniet sint non architecto minus maiores voluptatum, facilis ab voluptates accusamus obcaecati praesentium harum quia atque dignissimos reprehenderit! Asperiores laudantium alias rem fugiat, sunt corrupti dolores nostrum ad! Esse voluptates ipsa ea facere excepturi! Maxime cumque earum dolor qui in quibusdam, doloremque nemo delectus, libero voluptatum similique nulla optio quasi beatae vitae dolores odit aliquid? Molestias doloremque odit fugiat ducimus!
+        </p>
+      </div>
+    </div>
+
+</div>
+<!-- end of panel -->
+
+
+  <!-- Leftbar Footer -->
+<div class="leftbar__footer">
+        <button class="hideControlsBtn">
+          <span>
+            <img src="./assets/icons/leftCircleChev.svg" alt="Hide Controls Icon">
+          </span>
+          Hide Controls
+        </button>
+  </div>
+<!-- END OF Leftbar Footer -->
+
+
+
+    </div>
+<!-- END OF LEFTBAR -->
+    <div class="stage"></div>
+  </main>
+  <!-- END OF Main Container for leftbar and the stage -->
+
+  <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="js/UIcontrols.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/dragAndDrop.js"></script>
+  <script src="js/popup.js"></script>
 </body>
+
 </html>
