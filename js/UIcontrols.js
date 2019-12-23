@@ -6,7 +6,7 @@ const returnBtn = document.querySelector('.returnBtn');
 const hideControlsBtn = document.querySelector('.hideControlsBtn');
 const leftBar = document.querySelector('.leftbar');
 const menuItems = document.querySelectorAll('.main-menu__item');
-
+const returnPanel = document.querySelector(".panel__top__return");
 
 addElementsBtn.addEventListener('click', () => {
   mainMenuWrapper.classList.add('move-out');
@@ -19,13 +19,20 @@ addElementsBtn.addEventListener('click', () => {
 });
 
 returnBtn.addEventListener('click', () => {
-    mainMenuWrapper.classList.remove('move-out');
-    panel.classList.remove('move-in');
-
+  mainMenuWrapper.classList.remove('move-out');
+  panel.classList.remove('move-in');
+  
    menuItems.forEach((menuItem) => {
-       leftBar.addEventListener('transitionend', removedTransition);
-       menuItem.classList.remove('clipped');
-      })
+     leftBar.addEventListener('transitionend', removedTransition);
+     menuItem.classList.remove('clipped');
+     menuItem.classList.add('hideColors');
+    })
+  setTimeout(()=>{
+    
+   menuItems.forEach((menuItem) => {
+     menuItem.classList.remove('hideColors');
+    })
+  }, 1500);
 });
 
 function removedTransition(e) {
