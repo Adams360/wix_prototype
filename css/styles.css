@@ -465,6 +465,7 @@ body {
   left: 50%;
   visibility: hidden;
   opacity: 0;
+  pointer-events: none;
   transition: all .2s ease-in-out;
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(22, 45, 61, 0.5);
@@ -474,7 +475,13 @@ body {
   text-align: center;
   width: 100%;
   height: 100%;
-  max-height: 62rem; }
+  max-height: 62rem;
+  z-index: 225; }
+  .modal__head {
+    position: fixed;
+    background-color: #eaf7ff;
+    z-index: 2000;
+    width: 100%; }
   .modal [x-arrow] {
     position: absolute; }
   .modal {
@@ -482,7 +489,7 @@ body {
     margin-bottom: 10px; }
   .modal[x-placement="bottom"] [x-arrow] {
     top: -10px;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid #eaf7ff;
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
     left: 30% !important; }
@@ -493,7 +500,8 @@ body {
     border-left: 10px solid transparent; }
   .modal.fade-in {
     visibility: visible;
-    opacity: 1; }
+    opacity: 1;
+    pointer-events: all; }
   .modal__top {
     padding: 1rem;
     border-bottom: 1px solid gray;
@@ -509,14 +517,16 @@ body {
   .modal__sub {
     padding: 2rem;
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    border-bottom: 2px solid #3899ec; }
     .modal__sub a {
       font-size: 1.4rem;
       text-decoration: none;
       border-radius: 20px;
-      padding: .5rem 2rem;
+      padding: .5rem 1.2rem;
       color: #2d4150;
-      transition: all .4s ease-out; }
+      transition: all .4s ease-out;
+      white-space: nowrap; }
       .modal__sub a.active-btn {
         box-shadow: 1px 1px 2px 0 rgba(255, 255, 255, 0.11), inset 1px 1px 2px 0 #c6e4f9;
         color: #406781;
@@ -528,10 +538,13 @@ body {
   .modal__content {
     background: rgba(65, 105, 225, 0.219);
     min-height: 50rem;
-    margin: 0 2rem;
-    border-top: 1px solid gray;
     overflow: auto;
-    padding: .5rem 1rem; }
+    padding: .5rem 1rem;
+    max-height: calc(100% - 15rem);
+    margin-top: auto; }
+
+.simplebar-scrollbar::before {
+  background-color: #2d4150; }
 
 .hold {
   cursor: grabbing;

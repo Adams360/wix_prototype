@@ -4,6 +4,9 @@
     left: 50%;
     visibility: hidden;
     opacity: 0;
+
+    pointer-events: none;
+
     transition: all .2s ease-in-out;
 
     background-color: #fff;
@@ -15,6 +18,16 @@
     width: 100%;
     height: 100%;
     max-height: 62rem;
+
+    z-index: 225;
+
+
+    &__head {
+      position: fixed;
+      background-color: $blue-light;
+      z-index: 2000;
+      width: 100%;
+    }
 
     
 
@@ -29,7 +42,7 @@
       
       &[x-placement="bottom"] [x-arrow] {
         top: -10px;
-        border-bottom: 10px solid white;
+        border-bottom: 10px solid $blue-light;
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
         left: 30% !important;
@@ -46,6 +59,8 @@
     &.fade-in {
         visibility: visible;
         opacity: 1;
+        pointer-events: all;
+
     }
 
     &__top {
@@ -70,13 +85,15 @@
         padding: 2rem;
         display: flex;
         justify-content: space-evenly;
+        border-bottom: 2px solid $blue-main;
         a {
             font-size: 1.4rem;
             text-decoration: none;
             border-radius: 20px;
-            padding: .5rem 2rem;
+            padding: .5rem 1.2rem;
             color: $color-icon;
             transition: all .4s ease-out;
+            white-space: nowrap;
         
             &.active-btn {
               box-shadow: $icon-bg-shadow-sub;
@@ -93,11 +110,11 @@
     &__content {
         background: rgba(65, 105, 225, 0.219);
         min-height: 50rem;
-        margin: 0 2rem;
-        border-top: 1px solid gray;
-
         overflow: auto;
         padding: .5rem 1rem;
+
+        max-height: calc(100% - 15rem);
+        margin-top: auto;
 
     }
 }

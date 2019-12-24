@@ -12,14 +12,14 @@ refs.forEach((ref) => {
 
         // popper.js functionality
         let popper = new Popper(ref, modal, {
-            placement: 'bottom',
+            placement: 'bottom-end',
             onCreate: function(data) {
               console.log(data)
       },
             modifiers: {
               offset: {
                 enabled: true,
-                offset: '0,6'
+                offset: '0,8'
               },
               arrow: {
                 enabled: true,

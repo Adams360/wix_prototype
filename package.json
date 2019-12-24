@@ -12,6 +12,7 @@
     "node-sass": "^4.13.0"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "simplebar": "^5.1.0"
   }
 }
