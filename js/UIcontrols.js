@@ -21,17 +21,9 @@ addElementsBtn.addEventListener('click', () => {
 returnBtn.addEventListener('click', () => {
     mainMenuWrapper.classList.remove('move-out');
     panel.classList.remove('move-in');
-
-   menuItems.forEach((menuItem) => {
-       leftBar.addEventListener('transitionend', removedTransition);
-       menuItem.classList.remove('clipped');
-      })
 });
 
-function removedTransition(e) {
-  if(e.propertyName !== 'transform') return;
-  console.log(this);
-}
+
 
 hideControlsBtn.addEventListener('click', () => {
 
